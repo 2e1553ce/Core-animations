@@ -22,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // Start button
     self.startButton = [UIButton buttonWithType:UIButtonTypeSystem];
     CGFloat startButtonY = CGRectGetHeight(self.view.bounds) - 40.f;
     CGFloat startButtonX = CGRectGetWidth(self.view.bounds) / 2 - 20.f;
@@ -32,6 +33,7 @@
                forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.startButton];
     
+    // Red view
     self.rocket = [UIView new];
     self.rocket.frame = CGRectMake(0.f, 100.f, 40.f, 30.f);
     self.rocket.backgroundColor = UIColor.redColor;
@@ -42,6 +44,7 @@
 
 - (void)startButtonAction:(UIButton *)sender {
     [self basicAnimation];
+    //[self basicTransformation];
 }
 
 #pragma mark - Animations
@@ -50,10 +53,18 @@
     CABasicAnimation *animation = [CABasicAnimation animation];
     animation.keyPath = @"position.x";
     animation.fromValue = @77;
-    animation.toValue = @455;
+    animation.toValue = @355;
     animation.duration = 1;
     
     [self.rocket.layer addAnimation:animation forKey:@"basic"];
+    self.rocket.layer.position = CGPointMake(355, 115);
+}
+
+#pragma mark - Transformations
+
+- (void)basicTransformation {
+    [self.rocket.layer setValue:[NSNumber numberWithFloat:4.0] forKeyPath:@"transform.rotation.x"];
+    [self.rocket.layer setValue:[NSNumber numberWithFloat:4.0] forKeyPath:@"transform.scale.y"];
 }
 
 @end
