@@ -13,6 +13,7 @@
 		19D43E001F16AB850017B4AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D43DFE1F16AB850017B4AB /* Main.storyboard */; };
 		19D43E021F16AB850017B4AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D43E011F16AB850017B4AB /* Assets.xcassets */; };
 		19D43E051F16AB850017B4AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D43E031F16AB850017B4AB /* LaunchScreen.storyboard */; };
+		19D43E0F1F1B947B0017B4AB /* AVGHuman.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D43E0E1F1B947B0017B4AB /* AVGHuman.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		19D43E011F16AB850017B4AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19D43E041F16AB850017B4AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19D43E061F16AB850017B4AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19D43E0D1F1B947B0017B4AB /* AVGHuman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVGHuman.h; sourceTree = "<group>"; };
+		19D43E0E1F1B947B0017B4AB /* AVGHuman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVGHuman.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		19D43DF41F16AB850017B4AB /* CoreAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				19D43E0C1F1B945D0017B4AB /* Prorotype */,
 				19D43DF81F16AB850017B4AB /* AppDelegate.h */,
 				19D43DF91F16AB850017B4AB /* AppDelegate.m */,
 				19D43DFB1F16AB850017B4AB /* ViewController.h */,
@@ -77,6 +81,15 @@
 				19D43DF61F16AB850017B4AB /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19D43E0C1F1B945D0017B4AB /* Prorotype */ = {
+			isa = PBXGroup;
+			children = (
+				19D43E0D1F1B947B0017B4AB /* AVGHuman.h */,
+				19D43E0E1F1B947B0017B4AB /* AVGHuman.m */,
+			);
+			name = Prorotype;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19D43E0F1F1B947B0017B4AB /* AVGHuman.m in Sources */,
 				19D43DFD1F16AB850017B4AB /* ViewController.m in Sources */,
 				19D43DFA1F16AB850017B4AB /* AppDelegate.m in Sources */,
 				19D43DF71F16AB850017B4AB /* main.m in Sources */,
