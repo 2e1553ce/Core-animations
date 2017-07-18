@@ -18,6 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    // ******************************** Prototype *****************************************
+    // ************************************************************************************
     AVGHuman *firstHuman = [AVGHuman new];
     firstHuman.firstName = @"Stephan";
     firstHuman.lastName = @"Smith";
@@ -25,10 +27,18 @@
     
     AVGHuman *secondHuman = firstHuman;
     secondHuman.firstName = @"Gwen";
-    secondHuman.lastName = @"Sexy";
+    secondHuman.lastName = @"Sick";
     secondHuman.age = 50;
     
     NSLog(@"1: %@\n2: %@", [firstHuman description], [secondHuman description]);
+    // ************************************************************************************
+    // ************************************************************************************
+    
+    // ******************************* Factory Method *************************************
+    // ************************************************************************************
+    
+    // ************************************************************************************
+    // ************************************************************************************
     
     return YES;
 }

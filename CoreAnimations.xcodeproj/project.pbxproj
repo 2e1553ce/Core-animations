@@ -61,6 +61,7 @@
 		19D43DF41F16AB850017B4AB /* CoreAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				19D43E101F1EA8890017B4AB /* New Group */,
 				19D43E0C1F1B945D0017B4AB /* Prorotype */,
 				19D43DF81F16AB850017B4AB /* AppDelegate.h */,
 				19D43DF91F16AB850017B4AB /* AppDelegate.m */,
@@ -90,6 +91,13 @@
 				19D43E0E1F1B947B0017B4AB /* AVGHuman.m */,
 			);
 			name = Prorotype;
+			sourceTree = "<group>";
+		};
+		19D43E101F1EA8890017B4AB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
