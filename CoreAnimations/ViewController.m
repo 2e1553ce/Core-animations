@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AVGHuman.h"
 
 @interface ViewController ()
 
@@ -38,6 +39,9 @@
     self.rocket.frame = CGRectMake(0.f, 100.f, 40.f, 30.f);
     self.rocket.backgroundColor = UIColor.redColor;
     [self.view addSubview:self.rocket];
+    
+    AVGHuman *human = [AVGHuman new];
+    [human testMethod];
 }
 
 #pragma mark - Actions
